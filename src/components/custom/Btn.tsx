@@ -3,7 +3,7 @@ import { cva, type VariantProps } from "class-variance-authority"
 import Image from 'next/image'
 import Link, { type LinkProps } from 'next/link'
 
-const btnVariants = cva( `min-h-15 inline-flex justify-center items-center gap-4 rounded-2xl text-center hover:-translate-y-1 transition-all hover:shadow-xl duration-500 active:scale-90 active:shadow-md active:translate-y-1 whitespace-nowrap font-semibold tracking-[-0.02em]`, {
+const btnVariants = cva( `min-h-15 flex justify-center items-center gap-4 rounded-2xl text-center hover:-translate-y-1 transition-all hover:shadow-xl duration-500 active:scale-90 active:shadow-md active:translate-y-1 whitespace-nowrap font-semibold tracking-[-0.02em]`, {
    variants: {
       size: {
          lg: 'w-50',

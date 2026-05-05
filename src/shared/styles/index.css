@@ -48,6 +48,20 @@
 	--radius-3xl: calc(var(--radius) * 2.2);
 	--radius-4xl: calc(var(--radius) * 2.6);
 	--radius-custom: var(--custom-radius);
+
+	--animate-up-and-down: up-and-down 1.5s ease-in-out infinite;
+
+	@keyframes up-and-down {
+		0% {
+			transform: translateY(0);
+		}
+		50% {
+			transform: translateY(-20px);
+		}
+		100% {
+			transform: translateY(0);
+		}
+	}
 }
 
 :root {
