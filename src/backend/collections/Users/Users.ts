@@ -8,17 +8,40 @@ export const Users: CollectionConfig = {
       useAsTitle: 'email',
    },
    auth: true,
+   access: {
+      read: () => true,
+      create: () => true,
+      update: () => true,
+      delete: () => true,
+   },
    fields: [
-      {
-         name: 'name',
-         type: 'text',
-         required: true,
-      },
       {
          name: 'email',
          type: 'email',
          unique: true,
          required: true,
       },
+      {
+         name: 'geolocation',
+         type: 'group',
+         fields: [
+            {
+               name: 'city',
+               type: 'text',
+            },
+            {
+               name: 'country',
+               type: 'text',
+            },
+            {
+               name: 'latitude',
+               type: 'number',
+            },
+            {
+               name: 'longitude',
+               type: 'number',
+            },
+         ]
+      }
    ],
 }
