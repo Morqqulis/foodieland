@@ -44,7 +44,7 @@ export default function HeroSlider() {
                      </div>
 
                      <div className={`basis-165`}>
-                        <Image className={`h-full`} src={`/hero/hero-image.jpg`} alt={'Hero Image'} width={660} height={640} />
+                        <Image className={`h-full`} src={`/hero/hero-image.jpg`} alt={'Hero Image'} width={660} height={640} loading={'eager'} />
                      </div>
 
                      <Image className={`absolute left-1/2 -translate-x-1/2 top-12.5`} src={'/hero/hero-logo.png'} alt={'Badge'} width={150} height={150} />

@@ -5,7 +5,9 @@ import { useState } from 'react'
 export default function LikeBtn() {
    const [ liked, setLiked ] = useState( false )
 
-   function handleClick() {
+   function handleClick(e: React.MouseEvent) {
+      e.preventDefault()
+      e.stopPropagation()
       setLiked( prev => !prev )
    }
 
